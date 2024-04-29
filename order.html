@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="main.css">
+    <title>closeList PRIMUM</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Чек лист перевозок</h1>
+        <img src="img/logo.svg" alt="" class="logo">
+        <div class="headerLine">
+        </div>
+    </header>
+    <main class="OrderInfo">
+        <h1 class="OrderId">Заказ № 0001</h1>
+        <div class="orderInformation">
+            <div class="inf"><span class="infName">Подвижной состав</span><span class="infValue">01874TJA / 014058BA</span></div>
+            <div class="inf"><span class="infName">Наименование груза</span><span class="infValue">Медикаменты</span></div>
+            <div class="inf"><span class="infName">Масса груза, кг.</span><span class="infValue">15630</span></div>
+        </div>
+        <div class="transp">
+            <div class="OrderGroup">
+                <span class="material-symbols-outlined">
+                description
+                </span>
+                <span class="groupName">Документы</span>
+            </div>
+            <button class="moreButton" id="docsButton">
+                <span class="material-symbols-outlined BTN">
+                    arrow_drop_down
+                </span>
+            </button>
+        </div>
+        <div class="parameters" id="docsList" style="display: none;">
+            <div class="param">
+                <span class="paramName">CMR</span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form>  
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Invoice
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Carnet TIR
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    TTH-1
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="transp">
+            <div class="OrderGroup">
+                <span class="material-symbols-outlined">
+                description
+                </span>
+                <span class="groupName" >Топливные карты</span>
+            </div>  
+            <button class="moreButton" id="oilCardsButton">
+                <span class="material-symbols-outlined BTN">
+                    arrow_drop_down
+                </span>
+            </button>
+        </div>
+        <div class="parameters" id="oilCardsList" style="display: none;">
+            <div class="param">
+                <span class="paramName">
+                    Центротех
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    E100
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Роснефть
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    BP
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="transp">
+            <div class="OrderGroup">
+                <span class="material-symbols-outlined">
+                description
+                </span>
+                <span class="groupName" >Оплата дорог и приборы оплаты дорог</span>
+            </div>
+    
+            <button class="moreButton" id="eTollButton">
+                <span class="material-symbols-outlined BTN">
+                    arrow_drop_down
+                </span>
+            </button>
+        </div>
+        <div class="parameters" id="eTollList" style="display: none;">
+            <div class="param">
+                <span class="paramName">
+                    Российская Федерация
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form>  
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Польша
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Германия
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <div class="param">
+                <span class="paramName">
+                    Бельгия
+                </span>
+                <form action="/save-comment" method="POST">
+                    <textarea class="comment" name="comment" placeholder="Введите комментарий"></textarea>
+                </form> 
+                <button class="paramButton">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer">
+        PRIMUS INTER PARES
+    </footer>
+    <script src="script.js"></script>
+</body> 
+</html> 
