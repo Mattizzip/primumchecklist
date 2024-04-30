@@ -42,7 +42,35 @@ eTollBtn.addEventListener("click", function() {
         eTollList.style.display = "none"
     }
 });
+// // Открытие/закрытие списка документов на подвижной состав
 
+const transDocsBtn = document.getElementById("transDocsButton");
+const transDocsList = document.getElementById("transDocsList");
+transDocsBtn.addEventListener("click", function() {
+    if (transDocsList.style.display == "none")
+    {
+        transDocsList.style.display = "flex"
+    }
+    else
+    {
+        transDocsList.style.display = "none"
+    }
+});
+
+// // Открытие/закрытие списка документов на пводителя
+
+const driverDocsBtn = document.getElementById("driverDocsButton");
+const driverDocsList = document.getElementById("driverDocsList");
+driverDocsBtn.addEventListener("click", function() {
+    if (driverDocsList.style.display == "none")
+    {
+        driverDocsList.style.display = "flex"
+    }
+    else
+    {
+        driverDocsList.style.display = "none"
+    }
+});
 // Получение всех задач
 
 const tasks = document.getElementsByClassName("paramButton");
